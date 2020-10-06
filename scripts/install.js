@@ -1,6 +1,8 @@
 require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') })
 const tables = JSON.parse(require('fs').readFileSync('db-tables.json'))
 
+if (process.env.USE_DB !== undefined && process.env.USE_DB !== 'true') {process.exit(0)}
+
 const mysql = require('mysql2/promise');
 
 (async _=>{
