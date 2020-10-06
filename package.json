@@ -1,0 +1,22 @@
+{
+  "name": "bc-app-draft",
+  "version": "0.0.1",
+  "description": "Template for BigCommerce Custom Applications",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./scripts/start.js",
+    "install": "node ./scripts/install.js",
+    "reinstall": "node ./scripts/delete-db.js && node ./scripts/install.js"
+  },
+  "author": "Hunter Shaw",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "i": "^0.3.6",
+    "mysql2": "^2.2.5",
+    "node-bigcommerce": "^4.1.0",
+    "nodemon": "^2.0.4",
+    "npm": "^6.14.8",
+    "polka": "^0.5.2"
+  }
+}

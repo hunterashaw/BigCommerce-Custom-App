@@ -1,0 +1,9 @@
+[
+    {
+        "name":"SampleTable",
+        "columns":[
+            {"name":"ID"},
+            {"name":"Data","type":"json"}
+        ]
+    }
+]
