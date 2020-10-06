@@ -48,7 +48,7 @@ The BigCommerce helper will give you quick access to API endpoints. It uses the 
 
 ```js
 const bc = require('./helpers/bigCommerce');
-bc.get('/catalog/products');
+(async _=>{await bc.get('/catalog/products')})();
 ```
 
 #### Database
