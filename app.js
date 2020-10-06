@@ -1,12 +1,8 @@
 require('dotenv').config()
 const app = require('polka')()
 
-const bigCommerce = require('./helpers/bigCommerce'), error = require('./helpers/errors')
-const db = require('./helpers/db'); // use: const [rows] = await db.query("select * from table")
+//const bc = require('./helpers/bigCommerce'), error = require('./helpers/errors'), db = require('./helpers/db')
 
-app.get('/', async (req, res) => {
-    try {res.end(JSON.stringify((await bigCommerce.get('/catalog/products?include_fields=name,categories')).data))}
-    catch(e) {error.ServerError(res);console.log(e)}
-})
+//TODO Add endpoints here.
 
 app.listen(process.env.HOST_PORT)
